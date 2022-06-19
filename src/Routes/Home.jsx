@@ -46,7 +46,8 @@ const Home = () => {
     axios.delete('https://productspage.herokuapp.com/routes/delete.php', 
     {
       data:{
-        selectedItems: toBeDeleted
+        selectedItems: toBeDeleted,
+        delete: true
       }
     }
     ).then(res=>{
