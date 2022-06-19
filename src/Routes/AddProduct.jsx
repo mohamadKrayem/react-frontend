@@ -169,7 +169,7 @@ const AddProduct = () => {
       return;
     }
 
-    axios.post("https://phpapimaster.000webhostapp.com/routes/create.php", {
+    axios.post("https://productspage.herokuapp.com/routes/create.php", {
       type:request.type,
       name: request.name,
       price: request.price,

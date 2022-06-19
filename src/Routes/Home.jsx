@@ -15,7 +15,7 @@ const Home = () => {
     const loadProduct = async ()=>{
       setLoading(true);
       const res = await axios.get(
-        "https://phpapimaster.000webhostapp.com/routes/read.php", 
+        "https://productspage.herokuapp.com/routes/read.php", 
         {
           params:{
             type:["DISC", "Book", "Furniture"]
@@ -43,7 +43,7 @@ const Home = () => {
       }
     })
 
-    axios.delete('https://phpapimaster.000webhostapp.com/routes/delete.php', 
+    axios.delete('https://productspage.herokuapp.com/routes/delete.php', 
     {
       data:{
         selectedItems: toBeDeleted
